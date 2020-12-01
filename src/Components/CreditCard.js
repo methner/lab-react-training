@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import Rating from './Rating';
 
-export default class CreditCard extends Component {
+export default class DriverCard extends Component {
   render() {
-    const cardStyle = {
-      color: this.props.color,
-      backgroundColor: this.props.bgColor,
-    };
+    console.log(this.props);
     return (
-      <div className="cards" style={cardStyle}>
-        <h4>type: {this.props.type}</h4>
-        <h4>number: {this.props.number}</h4>
-        <h4>
-          Expires {this.props.expirationMonth} / {this.props.expirationYear}{' '}
-          {this.props.bank}
-        </h4>
-        <h4>owner:{this.props.owner}</h4>
+      <div>
+        <img style={{ width: '50%' }} src={this.props.img} alt="" />
+        <h2>{this.props.name}</h2>
+        <Rating>{this.props.rating}</Rating>
+        <h5>
+          {this.props.car.model} - {this.props.car.licensePlate}
+        </h5>
       </div>
     );
   }

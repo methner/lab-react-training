@@ -7,6 +7,7 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
 
 function App() {
   return (
@@ -20,7 +21,6 @@ function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -78,21 +78,25 @@ function App() {
       <Rating>5</Rating>
       <h1>Iteration 7</h1>
       <DriverCard
-  name="Travis Kalanick"
-  rating={4.2}
-  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-  car={{
-    model: "Toyota Corolla Altis",
-    licensePlate: "CO42DE"
-  }} />
-<DriverCard
-  name="Dara Khosrowshahi"
-  rating={4.9}
-  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-  car={{
-    model: "Audi A3",
-    licensePlate: "BE33ER"
-  }} />
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <h1>Iteration 8</h1>
+      <LikeButton /> <LikeButton />
     </>
   );
 }
