@@ -8,6 +8,9 @@ import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
@@ -97,6 +100,22 @@ function App() {
       />
       <h1>Iteration 8</h1>
       <LikeButton /> <LikeButton />
+      <h1>Iteration 9</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <h1>Iteration 10</h1>
+      <Dice />
+      <h1>Iteration 11</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </>
   );
 }
